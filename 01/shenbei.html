@@ -1,0 +1,65 @@
+<html>
+   <style>
+       #hd{
+           height:50px;
+           background:#666;
+           text-align:center;
+       }
+       #bd{
+           /**
+           左右栏通过添加负的margin放到正确的位置了，此段代码是为了摆正中间栏的位置
+            */
+           padding:0 180px 0 180px;
+           height:100px;
+       }
+       #middle{
+           float:left;
+           /**
+           左栏上去第一行
+            */
+           width:100%;
+           height:100px;
+           background:blue;
+       }
+       #left{
+         float:left;
+         width:180px;
+         height:100px;
+         margin-left:-100%;
+         background:#0c9;
+         /**
+            相对定位，根据中间栏位置做一定漂移
+          */
+         position:relative;
+         left:-180px;
+       }
+       #right{
+          float:left;
+          width:200px;
+          height:100px;
+          margin-left:-200px;
+          background:#0c9;
+          /**
+           相对定位，根据中间栏位置做一定漂移
+           */
+          position:relative;
+          right:-180px;
+       }
+       #footer{
+          height:20px;
+          background:#666;
+          text-align:center;
+       }
+   </style>
+   <body>
+        <div id="hd">header</div>
+        <div id="bd">
+            <div id="middle">middle</div>
+            <div id="left">left</div>
+            <div id="right">right</div>
+        </div>
+        <div id="footer">footer</div>
+   </body>
+
+
+</html>
