@@ -1,0 +1,63 @@
+<html>
+    <style>
+
+        .zIndexBox{
+            position: absolute;
+            top: -10px;
+            z-index: -1;
+        }
+        .marginBox{
+            position: absolute;
+            left: -500%;
+        }
+        .marginLeftBox{
+            position: absolute;
+            margin-left: -500%;
+        }
+        .transformBox{
+            position: absolute;
+            /**
+            缩放，
+             */
+            transform: scale(0);
+            /**
+            位移
+             */
+            transform: translateX(-200%);
+            /**
+            旋转
+             */
+            transform: rotateX(90deg);
+        }
+        .opacityBox{
+            position: absolute;
+            opacity: 0 ;
+        }
+    </style>
+    <body>
+        <div class="box">
+            box content
+        </div>
+        <div class="hiddenBox" hidden>
+            hidden box content
+        </div>
+        <div class="displayBox" style="display: none">
+            display box content
+        </div>
+        <div class="zIndexBox">
+            zIndexBox content
+        </div>
+        <div class="marginBox" >
+            marginBox content
+        </div>
+        <div class="marginLeftBox">
+            marginLeftBox content
+        </div>
+        <div class="transformBox">
+            transformBox content
+        </div>
+        <div class="opacityBox">
+            opacityBox content
+        </div>
+    </body>
+</html>
