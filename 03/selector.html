@@ -1,0 +1,216 @@
+<html>
+    <style>
+        *[lang^="en"]{
+            color: green;
+        }
+        *.warning{
+            color: red;
+        }
+        *#mainContent{
+            border: 1px solid blue;
+        }
+        h1{
+            background-color:red;
+            color: black;
+        }
+        h2{
+            background-color:blue;
+            color:white;
+        }
+
+        span.classy{
+            background-color:dodgerblue;
+        }
+
+        span#identified{
+            background-color:deeppink;
+        }
+
+        a{
+            color:blue;
+        }
+
+        /**
+        以 # 开头的本地链接
+         */
+        a[href^="#"]{
+            color: gold;
+        }
+        /**
+        包含 example的链接
+         */
+        a[href*="example"]{
+            background-color:silver;
+        }
+
+        /**
+        包含 insensitive的链接，不区分大小写
+         */
+        a[href*="insensitive" i]{
+            color:cyan;
+        }
+
+        /**
+        包含 cAsE的链接 ，区分大小写
+         */
+        a[href*="cAsE" s]{
+            color:pink;
+        }
+
+        /**
+        以 .org结尾的链接
+         */
+        a[href$=".org"]{
+            color:red;
+        }
+        h3,h4{
+            color:darkgrey;
+            background-color:beige;
+        }
+
+        h5 em{
+            color:red;
+        }
+
+        h6 > strong {
+            color:red;
+        }
+
+
+        p ~ span {
+            color: red;
+        }
+
+        li:first-of-type + li {
+            color: red;
+        }
+
+
+        /* 属于"被选择"列的表单元格 */
+        col.selected || td {
+            background: gray;
+            color: blue;
+            font-weight: bold;
+        }
+
+
+    </style>
+    <body>
+        <!--通用选择器 -->
+        <div class="universalSelector">
+            <p class="warning">
+                <span lang="en-us" >
+                    a green span
+                </span>
+                in a red paragraph
+            </p>
+            <p id="mainContent" lang="en-gb">
+                <span class="warning">
+                    a red span
+                </span>
+                in a green paragraph
+            </p>
+        </div>
+
+
+        <div class="typeSelector">
+
+            <h1>
+                h1 content
+            </h1>
+
+            <h2>
+                h2 content
+            </h2>
+
+        </div>
+
+        <div class="classSelector">
+            <span class="classy">
+                Here's a span with some text.
+            </span>
+            <span>
+                Here's another.
+            </span>
+        </div>
+        <div class="idSelector">
+
+            <span id="identified">
+                Here's a span with some text.
+            </span>
+            <span>
+                Here's another.
+            </span>
+
+        </div>
+
+        <div class="attributeSelector">
+            <ul>
+                <li><a href="#internal">Internal link</a></li>
+                <li><a href="http://www.example.com">Example link</a></li>
+                <li><a href="#Insensitive"> Insensitive Internal link</a></li>
+                <li><a href="http://example.org">Example org link</a></li>
+            </ul>
+        </div>
+
+        <div class="selectorList">
+            <h3>
+                h3 content
+            </h3>
+            <h4>
+                h4 content
+            </h4>
+
+        </div>
+
+        <div class="descendantSelector">
+            <h5>This is a <em>important</em> heading</h5>
+            <p>This is a <em>important</em> paragraph.</p>
+        </div>
+
+        <div class="childSelectors">
+            <h6>This is <strong>very</strong> <strong>very</strong> important.</h6>
+            <h6>This is <em>really <strong>very</strong></em> important.</h6>
+        </div>
+
+        <div class="generalSiblingCombinator">
+            <span>This is not red.</span>
+            <p>Here is a paragraph.</p>
+            <code>Here is some code.</code>
+            <span>And here is a span.</span>
+        </div>
+
+        <div class="adjacentSiblingCombinator">
+            <ul>
+                <li>One</li>
+                <li>Two!</li>
+                <li>Three</li>
+            </ul>
+        </div>
+
+        <div class="columnCombinator">
+            <table border="1">
+                <colgroup>
+                    <col span="2"/>
+                    <col class="selected"/>
+                </colgroup>
+                <tbody>
+                <tr>
+                    <td>A
+                    <td>B
+                    <td>C
+                </tr>
+                <tr>
+                    <td colspan="2">D</td>
+                    <td>E</td>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td colspan="2">G</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </body>
+</html>
