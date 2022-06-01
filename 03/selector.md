@@ -87,3 +87,61 @@
           || 组合器选择属于某个表格行的节点。
         语法: A || B 
         例子: col || td 会匹配所有 作用域内的 元素。
+
+## 可以继承的元素
+
+- 字体
+  - font
+    - font-family 规定元素的字体系列
+    - font-weight 字体粗细
+    - font-size 字体尺寸
+    - font-style 字体风格
+    - font-variant	设置小型大写字母的字体显示文本，这意味着所有的小写字母均会被转换为大写，但是所有使用小型大写字体的字母与其余文本相比，其字体尺寸更小。
+    - font-stretch	允许你使文字变宽或变窄。所有主流浏览器都不支持。
+    - font-size-adjust	为某个元素规定一个 aspect 值，字体的小写字母 "x" 的高度与 "font-size" 高度之间的比率被称为一个字体的 aspect 值。这样就可以保持首选字体的 x-height。
+
+
+- 文本属性
+  - text-indent	文本缩进
+  - text-align	文本水平对齐
+  - line-height	行高
+  - word-spacing 增加或减少单词间的空白（即字间隔）
+  - letter-spacing 增加或减少字符间的空白（字符间距）
+  - text-transform	控制文本大小写
+  - direction	规定文本的书写方向
+  - color	文本颜色
+
+- 元素可见性
+  - visibility	规定元素是否可见
+
+- 表格布局属性
+  - caption-side 规定表格标题的放置方式
+  - border-collapse	为表格设置合并边框模型
+  - border-spacing	设置相邻单元格的边框间的距离（仅用于“边框分离”模式）
+  - empty-cells		设置是否显示表格中的空单元格（仅用于“分离边框”模式）
+  - table-layout	显示表格单元格、行、列的算法规则
+
+
+
+		
+
+
+
+	 
+ 
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
