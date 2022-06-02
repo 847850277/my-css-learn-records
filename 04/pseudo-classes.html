@@ -1,0 +1,85 @@
+<html charset="utf-8">
+    <style>
+        input[type="checkbox"]:checked{
+            background: red;
+        }
+        input[type="checkbox"]{
+            -webkit-appearance:none;
+            appearance:none;
+            width:50px;
+            height:50px;
+            background: #999;
+            border:1px solid #999;
+            border-radius: 30px;
+            outline: none;
+        }
+
+        p:empty {
+            width:100px;
+            height:20px;
+            background:#ff0000;
+        }
+        p{
+            background:blue;
+        }
+
+        span:first-of-type {
+            color: red;
+            font-style: italic;
+        }
+
+        li:last-child {
+            background-color: lime;
+        }
+
+        div em:last-of-type {
+            color: lime;
+        }
+
+
+
+
+    </style>
+    <body>
+        <div class="inputSelect">
+            <form id="inputSelect">
+                <input checked type="checkbox"/>
+                <hr>
+                <input  type="checkbox"/>
+            </form>
+        </div>
+
+        <hr>
+            <p></p>
+            <p>A paragraph.</p>
+
+        <hr>
+            <h2>Heading</h2>
+            <span>Paragraph 1</span>
+            <span>Paragraph 1</span>
+
+        <hr>
+            <ul>
+                <li>此元素的背景色不是lime</li>
+                <li>我也不是lime</li>
+                <li>我是lime</li>
+            </ul>
+        <hr>
+
+        <div>
+            <em>我没有颜色 :(</em><br>
+            <span><em>我有颜色！</em></span><br>
+            <strong>我没有颜色 :(</strong><br>
+            <em>我有颜色 :D</em><br>
+            <span>
+                <em>我在子元素里，但没有颜色！</em><br>
+                <span style="text-decoration:line-through;"> 我没有颜色 </span><br>
+                <em>我却有颜色！</em><br>
+            </span><br>
+            <strong>我也没有颜色 :(</strong>
+        </div>
+
+
+
+    </body>
+</html>
