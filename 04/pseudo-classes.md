@@ -1,5 +1,7 @@
 # CSS3的伪类和伪元素
 
+[链接](https://github.com/haizlin/fe-interview/issues/14)
+
 CSS3中规定伪类使用:来表示；伪元素使用::来表示
 
 
