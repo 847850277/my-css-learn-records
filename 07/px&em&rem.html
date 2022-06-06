@@ -1,0 +1,107 @@
+<html>
+    <style>
+        .box1 {
+            font-size: 20px;
+        }
+        .text1 {
+            height: 2em;
+        }
+
+        .text2 {
+            font-size: 2em;
+            height: 2em;
+        }
+
+        .text3 {
+            font-size: 20px;
+            height: 2em;
+        }
+
+        .em {
+            font-size: 40px;
+            width: 7.5em; /* 300px */
+            height: 7.5em;
+            border: solid 2px black;
+        }
+        .em p {
+            font-size: 0.5em; /* 20px */
+            width: 7.5em; /* 150px */
+            height: 7.5em;
+            border: solid 2px blue ;
+            color: blue;
+        }
+        .em span {
+            font-size: 0.5em;
+            width: 7em;
+            height: 6em;
+            border: solid 1px red;
+            display: block;
+            color: red;
+        }
+
+        html {
+            font-size: 10px;
+        }
+        .rem {
+            font-size: 4rem; /* 40px */
+            width: 20rem;  /* 200px */
+            height: 20rem;
+            border: solid 2px black;
+        }
+        .rem p {
+            font-size: 2rem; /* 20px */
+            width: 10rem;
+            height: 10rem;
+            border: solid 1px blue;
+            color:blue ;
+        }
+        .rem span {
+            font-size: 1.5rem;
+            width: 7rem;
+            height: 6rem;
+            border: solid 2px red;
+            display: block;
+            color: red;
+        }
+
+
+
+
+    </style>
+
+    <body>
+
+        <div class="box1">
+            <p class="text1">Text1</p>
+        </div>
+        <div class="box2">
+            <p class="text2">Text2</p>
+        </div>
+        <div class="box3">
+            <p class="text3">Text3</p>
+        </div>
+
+        <hr/>
+
+        <div class="em">
+            parent div
+            <p>
+                child p child p child p
+                <span> child'child span child'child span child'child span</span>
+            </p>
+        </div>
+
+        <hr/>
+
+        <div class="rem">
+            parent div
+            <p>
+                child p child p child p
+                <span>child'child span child'child span child'child span</span>
+            </p>
+        </div>
+
+
+
+    </body>
+</html>
