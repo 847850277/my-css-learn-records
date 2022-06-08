@@ -5,9 +5,11 @@
 [掘金文章](https://juejin.cn/post/6844903491891118087)
 
 ## flex布局
-
+        
             Flex布局(弹性布局)，是2009年，W3C提出的一种新方案，可以简便、完整、响应式地实现各种页面布局。
         目前，他已经得到了所有浏览器的支持，这意味着，现在能很安全的使用这项功能。
+            
+            一维布局            
 
             父容器有六个属性
                 - 1、flex-direction: 主轴方向 
@@ -26,6 +28,9 @@
 
 
 ## grid布局
+
+[阮一峰 CSS Grid 网格布局教程](http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html)
+
 
 ## 流式布局
 
