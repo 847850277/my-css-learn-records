@@ -1,0 +1,56 @@
+<html>
+    <style>
+        .button{
+            float: left;
+            clear: both;
+            margin:5px;
+            padding-right: 20px;
+            /*color:blue;*/
+            color:white;
+            text-decoration: none;
+            background: url(./sliding-doors-button-red-right.png) top right no-repeat;
+        }
+
+        .button span{
+            line-height:22px;
+            padding: 7px 0 5px  18px;
+            display: block;
+            background: url(./sliding-doors-button-red.png) top left no-repeat;
+        }
+
+        .button-blue {
+            background-image: url(./button_right_blue.png);
+        }
+        .button-blue span {
+            background-image: url(./button_left_blue.png);
+        }
+
+        .button:hover {
+            background-position: right -34px;
+        }
+        .button:hover span {
+            background-position: 0 -34px; color: #fff;
+        }
+
+
+
+
+    </style>
+
+    <body>
+        <a href="#" class="button">
+            <span>Sliding Doors Button</span>
+        </a>
+        <a href="#" class="button button-blue">
+            <span>Longer Sliding Doors Button</span>
+        </a>
+        <a href="#" class="button button-black">
+            <span>Longer Sliding Doors Button</span>
+        </a>
+        <a href="#" class="button button-blue">
+            <span>Short Button</span>
+        </a>
+    </body>
+
+
+</html>
