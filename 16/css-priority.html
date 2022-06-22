@@ -1,0 +1,66 @@
+<html>
+    <style>
+        /**
+        特殊值 0，0，0，1
+         */
+        a{color:yellow;}
+        /**
+        特殊值 0，0，0，2
+         */
+        div a {
+            color:green;
+        }
+        /**
+        特殊值 0，0，1，1
+         */
+        .demo a {
+            color:black;
+        }
+        /**
+        特殊值 0，0，2，1
+         */
+        .demo input[type="text"] {
+            color:blue;
+        }
+        /**
+        特殊值 0，0，2，0
+         */
+        .demo *[type="text"] {
+            color:gray;
+        }
+        /**
+        特殊值 0，1，0，1
+         */
+        #demo a {
+            color:orange;
+        }
+        /**
+        特殊值 0，1，0，2
+         */
+        div#demo a {
+            color:red;
+        }
+
+        /*
+        a{
+            color:gold !important;
+        }
+         */
+
+
+
+    </style>
+
+    <body>
+        <a href="">这一条应该是黄色</a>
+        <div class="demo">
+            <input type="text" value="第二条应该是蓝色"/>
+            <a href="">第三条应该是黑色</a>
+        </div>
+        <div id="demo">
+            <a href="">第四条应该是红色</a>
+        </div>
+    </body>
+
+
+</html>
